@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import  {Saira_Stencil_One}  from 'next/font/google'
 import { PrimaryInput } from "./primary-input"
+import { Saira_Stencil_One } from "next/font/google"
 
 
 
@@ -16,13 +16,13 @@ interface HeaderProps{
 const TagHeader = styled.header`
     display: flex;
     align-item: center;
-    justify-content:space-between; 
+    justify-content: space-between; 
     padding:20px 160px;
 ` 
 
 const Logo = styled.a`
     color: var(--logo-color)
-    font-weight:400px
+    font-weight:400;
     font-size: 40px;
     line-height:150%;
 `
@@ -32,7 +32,7 @@ export function Header(props: HeaderProps){
         <TagHeader>
             <Logo className={SairaStencil.className}> Capputeeno </Logo>
             <div>
-                <PrimaryInput/>
+                <PrimaryInput placeholder="testando"/>
             </div>
         </TagHeader>
     )
